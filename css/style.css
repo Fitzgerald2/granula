@@ -60,11 +60,11 @@ nav a:hover{
   padding: 50px 0;
 
 }
-h2{
+h2, h4{
   font-size: 26px;
   text-transform: uppercase;
   margin-bottom: 40px;
-  font-weight: 300;
+  font-weight: 700;
 }
 .features{
   margin: 0 auto;
@@ -114,8 +114,9 @@ h3 {
 /* Subcribe */
 .subscribe, footer {
   background-color: rgb(255, 224, 17);
-  padding: 50px 0'
+  padding: 50px 0;
 }
+
 .email{
   border: 2px;
   border-color: white;
@@ -128,14 +129,14 @@ outline: none;
 margin-left: 10px;
 }
 
-.email-focus{
-  width: 4px
+.email:focus{
+  width: 4px;
 
 }
 
-.button{
+.button, button {
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #808080;
   padding: 8px 0;
   border-radius: 5px;
   width: 60%;
@@ -160,7 +161,88 @@ margin-left: 10px;
     color: rgb(215, 215, 215);
     margin: 0 10px 0 10px;
   }
-   @media screen and (max-width 760px){
+
+  /* About page style */
+  .about{
+    background-image: url(../images/three.jpg);
+
+  }
+  .gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .gallery-image {
+    height: 200px;
+    margin: 0 0 20px 20px;
+
+  }
+
+  .pricing {
+    background-image: url(../images/header.jpg);
+    height: auto;
+    padding: 50px 0;
+    color: white;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .card {
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    margin: 12px;
+    padding-bottom: 50px;
+    flex-basis: 250px;
+    align-items: center;
+
+  }
+  h4{
+    background: #808080;
+    height: 90px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+  ul{
+    list-style: none;
+    color: #333333;
+    margin: 25px;
+
+  }
+  li{
+    height: 20px;
+    margin: 10px auto;
+  }
+.card-big{
+  transform: scalex(1.12);
+
+}
+.card-big button{
+  background-color: yellow;
+
+}
+
+buton:hover{
+  background: #333333;
+  color:white;
+
+}
+
+
+
+
+
+
+   @media screen and (max-width: 760px){
 
      .scroll-effect{
        background-attachment: scroll;
@@ -170,7 +252,7 @@ margin-left: 10px;
        padding-top: 50px;
      }
 
-     .Subcribe, .highlight, .features{
+     .subscribe, .highlight, .features{
        padding: 20px;
      }
      .button, .email{
